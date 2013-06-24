@@ -335,7 +335,7 @@ class FormGenerator {
                     if ($k != 'optStart' && is_array($v)) {
 
                         foreach ($v as $opk => $opv) {
-                            if ($opk == 'text') {
+                            if ($opk == 'label') {
                                 $option_text = $opv;
                                 continue;
                             }
