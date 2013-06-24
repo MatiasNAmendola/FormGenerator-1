@@ -89,7 +89,7 @@ $f->select(array(
     'label' => 'Select box2',
     'options' => array('audi' => 'Audi',
         'peugot' => 'Peugot',
-        'saab' => array('text' => 'Saab', 'selected' => 'selected'),
+        'saab' => array('label' => 'Saab', 'selected' => 'selected'),
         'zastava' => 'Zastava',
         'fico' => 'Fico',
         'peglica' => 'Peglica',),
@@ -100,7 +100,7 @@ $f->select(array(
     'options' => array('audi' => 'Audi',
         'optStart' => array('label' => 'Group1', 'disabled'=>'disabled'),
         'peugot' => 'Peugot',
-        'saab' => array('text' => 'Saab', 'selected' => 'selected'),
+        'saab' => array('label' => 'Saab', 'selected' => 'selected'),
         'optEnd' => '',
         'zastava' => 'Zastava',
         'optStart1' => array('label' => 'Group2'),
@@ -118,7 +118,7 @@ $f->input(array('type' => 'submit',
 
 $form = $f->render();
 
-isset($_POST)?pre($_POST):false;
+(isset($_POST) && !empty($_POST))?pre($_POST):false;
 ?>
 <!DOCTYPE HTML>
 <html>

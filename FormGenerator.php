@@ -295,7 +295,7 @@ class FormGenerator {
       'options' => array('audi' => 'Audi',
       'optStart' => array('label' => 'Svabi', 'disabled'=>'disabled'),
       'peugot' => 'Peugot',
-      'saab' => array('text' => 'Saab', 'selected' => 'selected'),
+      'saab' => array('label' => 'Saab', 'selected' => 'selected'),
       'optEnd' => '',
       'zastava' => 'Zastava',
       'optStart1' => array('label' => 'Taliani'),
